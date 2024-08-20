@@ -43,10 +43,8 @@ export default function Home() {
       <UserMenu />
 
     </div>
-
-
         {/* Conversation Area (with padding) */}
-        <div className="flex-grow pb-16 mx-36 mt-20">
+        <div className="flex-grow pb-16 mx-36 mt-20 overflow-y-scroll h-[80%]">
         {messages.map((msg, index) => (
           <ChatMessage key={index} message={msg.message} isUser={msg.isUser} />
          ))}
